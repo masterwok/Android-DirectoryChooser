@@ -7,9 +7,11 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.github.ben-manes:gradle-versions-plugin:0.11.3'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
     }
 }
+
+apply plugin: 'com.github.dcendents.android-maven'
 
 dependencies {
     compile 'com.android.support:appcompat-v7:27.1.0'
