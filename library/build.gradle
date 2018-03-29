@@ -12,12 +12,14 @@ buildscript {
 }
 
 dependencies {
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:support-annotations:25.3.1'
+    compile 'com.android.support:appcompat-v7:27.1.0'
+    compile 'com.android.support:support-annotations:27.1.0'
     compile 'com.github.guardian:Option:e933c3a31d'
     compile 'com.github.frankiesardo:auto-parcel:0.3.1'
-    compile 'com.google.auto.value:auto-value:1.1'
     annotationProcessor 'com.github.frankiesardo:auto-parcel-processor:0.3.1'
+
+    compile             "com.google.auto.value:auto-value-annotations:1.6"
+    annotationProcessor "com.google.auto.value:auto-value:1.6"
 
     testCompile 'junit:junit:4.12'
     testCompile 'org.mockito:mockito-all:1.9.5'
@@ -28,12 +30,12 @@ dependencies {
 }
 
 android {
-  compileSdkVersion 25
-  buildToolsVersion '25.0.2'
+  compileSdkVersion 27
+  buildToolsVersion '27.0.3'
 
   defaultConfig {
-    minSdkVersion 11
-    targetSdkVersion 22
+    minSdkVersion 14
+    targetSdkVersion 27
   }
 
   lintOptions {
